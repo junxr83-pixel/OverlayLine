@@ -25,8 +25,7 @@ jobs:
       - name: Extract project
         run: |
           mkdir android-project
-          unzip OverlayLine_Project_v7_LandscapeFix.zip -d android-project
-
+          unzip OverlayLine_Project_v8_AnchorPivot.zip -d android-project
       - name: Build APK
         working-directory: android-project
         run: gradle assembleDebug --no-daemon
